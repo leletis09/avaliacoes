@@ -1,0 +1,99 @@
+:root{
+    --main-color: #00498db8;
+    --bg-color: #f0f8ff;
+    --black: #0d0d6084;
+    --letters: #999;
+    }
+/* todo o site */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    font-family: Arial, Helvetica, sans-serif;
+    transition: all 0.5s ease-in;
+    scroll-behavior: smooth;
+    scroll-padding-top: 16vh;
+}
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+}
+body {
+    background-color: var(--bg-color);
+}
+/* cabeçalho */
+.header {
+    background-color: var(--main-color);
+    display: flex;
+    font-family: Arial, Helvetica, sans-serif;
+    /* justify-content: space-between; */
+    align-items: center;
+    padding: 1.5rem 7%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 16vh;
+    z-index: 1000;
+}
+.header .logo img {
+    height: 6rem;
+    /* border-radius: 50%; */
+}
+.header .navbar a {
+    color: #fff;
+    font-size: 2.3rem;
+    margin: 0 1rem
+}
+.header .navbar a:hover{
+    color: var(--black);
+    border-top: 0.3rem solid var(--black);
+    border-bottom: 0.3rem solid var(--black);
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+}
+.logo{
+    padding: 56px;
+}
+.navbar{
+    margin-left: 240px;
+ }
+ /*corpo do site*/
+.banner{
+    display: flex;
+    margin-top: 25rem;
+    margin-left: 5rem;  
+}
+.left-column .right-column{
+    flex-basis: 50%;
+} 
+.right-column img{
+    bottom: 1200px;
+    margin-left:300px;   
+    background-image: transparent;
+}
+/* separa a imagem da margem */
+.right-img{
+    margin-left: 95px;
+    margin-right: 7rem;
+    margin-top: 0.5rem;
+    background-image: transparent;
+}
+.left-column h1{
+    font-size: 100px;
+}
+.left-column h3{
+    font-size: 35px;
+}
+span{
+    color: var(--main-color);
+}
+.left-column p{
+    margin-top: 3rem;
+    font-size: 16px;
+    color: var(--letters);
+}
